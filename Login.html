@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login_css.css">
+    <script src="loginsignup.js" defer></script>
+</head>
+<body>
+    <nav>
+        <img src="HomePagePics/world.png" alt="Airplane Logo">
+        <a href="HomePage.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="ContactUs.html">Contact Us</a>
+        <a href="Tracking.html">Tracking</a>
+    </nav>
+    <div class="container">
+        <input type="checkbox" id="check">
+        <div class="login form">
+          <header>Login</header>
+          <form method="post" action="login.php">
+            <input type="text" name="loginemail"  placeholder=" Enter your email" required>
+            <input type="password" name="loginpassword"  placeholder=" Enter your password" required>
+            <a href="ResetPassword.html">Forgot password?</a>
+            <input type="Submit" class="button" name="login" value="LogIn">
+          </form>
+          
+          <div class="signup">
+            <span class="signup">Don't have an account?
+             <label for="check">Signup</label>
+            </span>
+          </div>
+
+
+        </div>
+        <div class="registration form">
+          <header>Signup</header>
+          <form method="post" action="signup.php">
+            
+            <input type="text" id="username" name="username" placeholder=" Username" required>
+            <input type="email" id="email" name="email" placeholder=" Email" required>
+            <input type="password" id="password" name="password" placeholder=" Create a password" required>
+            <input type="password" id="confirmpassword" name="confirmpassword" placeholder=" Confirm password" required>
+            <input type="Submit" class="button" name="register" value="Signup">
+          </form>
+          <div class="signup">
+            <span class="signup">Already have an account?
+             <label for="check">Login</label>
+            </span>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

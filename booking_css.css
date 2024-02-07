@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #CED0E0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+nav {
+    position: relative;
+    top: 0;
+    width: 100%;
+    background-color: #eef5ff;
+    overflow: hidden;
+    align-items: center;
+    padding: 0px; /* Add padding for spacing */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 1000; /* Ensure it's above other elements */
+}
+
+nav a {
+    display: block;
+    color: #a25772;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #bccce8;
+    color: #a25772;
+}
+
+nav a.active {
+    background-color: #dde7f9;
+    color: #a25772;
+}
+
+nav img {
+    height: 70px;
+    width: 70px;
+    margin-left: 10px;
+}
+nav a.Login {
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+th{
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #e5e5e5;
+}
+
+
+/* Adjust styles for small screens */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: row; /* Change flex-direction to row */
+        justify-content: space-between; /* Add space between items */
+        align-items: center;
+        padding: 10px; /* Adjust padding for spacing */
+    }
+
+    nav a {
+        display: block;
+        text-align: center;
+        padding: 10px; /* Adjust padding for spacing */
+        font-size: 14px;
+    }
+
+    nav a.Login {
+        margin-top: 0; /* Remove margin-top for login link */
+        margin-left: auto; /* Move login link to the right */
+    }
+
+    nav img {
+        height: 30px;
+        width: 30px;
+        margin: 0;
+    }
+
+    nav a:hover {
+        background-color: #bccce8;
+        color: #a25772;
+    }
+
+    nav a.active {
+        background-color: #dde7f9;
+        color: #a25772;
+    }
+}
+
+
+
+.flight-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.flight-table th, .flight-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.flight-table th {
+    background-color: #f2f2f2;
+}

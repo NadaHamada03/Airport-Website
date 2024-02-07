@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="booking_css.css">
+    <script src="booking.js"></script>
+
+
+    <nav>
+      <img src="HomePagePics/world.png" alt="Airplane Logo">
+      <a href="HomePage-2.html">Home</a>
+      <a href="About-2.html">About</a>
+      <a href="ContactUs-2.html">Contact Us</a>
+      <a class="active" href="Booking.html">Booking</a>
+      <a href="Tracking-2.html">Tracking</a>
+      <a class="Login" href="HomePage.html">Log-out</a>
+  </nav>
+
+</head>
+<body>
+    <table class="flight-table">
+      <thead>
+          <tr>
+              <th>Flight Number</th>
+              <th>Departure</th>
+              <th>Destination</th>
+              <th>Price</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr onclick="goToCheckout('ABC123')">
+              <td>ABC123</td>
+              <td>New York</td>
+              <td>Los Angeles</td>
+              <td>$300</td>
+          </tr>
+          <tr onclick="goToCheckout('XYZ789')">
+              <td>XYZ789</td>
+              <td>London</td>
+              <td>Paris</td>
+              <td>$250</td>
+          </tr>
+          <tr onclick="goToCheckout('DEF456')"> 
+            <td>DEF456</td> 
+            <td>Chicago</td> 
+            <td>Miami</td> 
+            <td>$250</td> 
+          </tr>
+          <tr onclick="goToCheckout('GHI789')">
+           <td>GHI789</td>
+           <td>San Francisco</td>
+           <td>Seattle</td>
+           <td>$400</td>
+          </tr>
+          <tr onclick="goToCheckout('JKL012')"> 
+           <td>JKL012</td>
+           <td>Denver</td> 
+           <td>Phoenix</td> 
+           <td>$200</td> 
+          </tr>
+          <tr onclick="goToCheckout('MNO345')"> 
+            <td>MNO345</td> 
+            <td>Atlanta</td> 
+            <td>Dallas</td> 
+            <td>$350</td> 
+          </tr>
+          <tr onclick="goToCheckout('PQR678')"> 
+            <td>PQR678</td> 
+            <td>Boston</td> 
+            <td>San Diego</td> 
+            <td>$280</td> 
+          </tr>
+          <tr onclick="goToCheckout('STU901')"> 
+            <td>STU901</td> 
+            <td>Houston</td> 
+            <td>Las Vegas</td> 
+            <td>$320</td> 
+          </tr>
+          <tr onclick="goToCheckout('VWX234')"> 
+            <td>VWX234</td> 
+            <td>Orlando</td> 
+            <td>Portland</td> 
+            <td>$180</td> 
+          </tr>
+          <tr onclick="goToCheckout('YZA567')"> 
+            <td>YZA567</td> 
+            <td>Miami</td> 
+            <td>Denver</td> 
+            <td>$270</td> 
+          </tr>
+          <tr onclick="goToCheckout('BCD890')"> 
+            <td>BCD890</td> 
+            <td>Seattle</td> 
+            <td>Chicago</td> 
+            <td>$220</td> 
+          </tr>
+          <tr onclick="goToCheckout('EFG123')"> 
+            <td>EFG123</td> 
+            <td>Phoenix</td> 
+            <td>San Francisco</td> 
+            <td>$380</td> 
+          </tr>
+          <tr onclick="goToCheckout('HIJ456')"> 
+            <td>HIJ456</td> <td>Dallas</td> 
+            <td>Atlanta</td> 
+            <td>$260</td> 
+          </tr>
+          <tr onclick="goToCheckout('KLM789')"> 
+            <td>KLM789</td> 
+            <td>San Diego</td> 
+            <td>Boston</td> 
+            <td>$310</td> 
+          </tr>
+          <tr onclick="goToCheckout('NOP012')"> 
+            <td>NOP012</td> 
+            <td>Las Vegas</td> 
+            <td>Houston</td> 
+            <td>$190</td> 
+          </tr>
+          <tr onclick="goToCheckout('QRS345')"> 
+            <td>QRS345</td> 
+            <td>Portland</td> 
+            <td>Orlando</td> 
+            <td>$230</td> 
+          </tr>
+          <tr onclick="goToCheckout('TUV678')"> 
+            <td>TUV678</td> 
+            <td>Denver</td> 
+            <td>Phoenix</td> 
+            <td>$240</td> 
+          </tr>
+
+
+
+
+
+          <!-- Add more rows as needed -->
+      </tbody>
+  </table>
+</body>
+</html>

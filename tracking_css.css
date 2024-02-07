@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+  }
+  
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #CED0E0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+nav {
+    position: relative;
+    top: 0;
+    width: 100%;
+    background-color: #eef5ff;
+    overflow: hidden;
+    align-items: center;
+    padding: 0px; /* Add padding for spacing */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 1000; /* Ensure it's above other elements */
+}
+
+nav a {
+    display: block;
+    color: #a25772;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #bccce8;
+    color: #a25772;
+}
+
+nav a.active {
+    background-color: #dde7f9;
+    color: #a25772;
+}
+
+nav img {
+    height: 70px;
+    width: 70px;
+    margin-left: 10px;
+}
+nav a.Login {
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+
+.flight-container {
+    padding-left: 36.5%;
+    padding-right: 36.5%;
+}
+  
+.flight-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* or use 'space-between' for more space between cards */
+}
+  
+.flight-card {
+    flex: 0 0 calc(33.33% - 20px); /* Adjust the percentage as needed, considering margin */
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 5px;
+    padding: 10px;
+    box-sizing: border-box; /* Include padding and border in the width */
+}
+  
+  .flight-number {
+    font-weight: bold;
+    font-size: 20px;
+    color: #333333;
+}
+  
+  .flight-info {
+    margin-top: 10px;
+}
+  
+  .flight-info span {
+    display: block;
+    color: #666666;
+}
+  
+.flight-status {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+}
+  
+.status-on-time {
+    background-color: #4caf50;
+}
+  
+.status-delayed {
+    background-color: #f44336;
+}
+  
+.status-cancelled {
+    background-color: #ff9800;
+}
+  
+  
+
+/* Adjust styles for small screens */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: row; /* Change flex-direction to row */
+        align-items: center;
+        padding: 10px; /* Adjust padding for spacing */
+    }
+
+    nav a {
+        display: block;
+        text-align: center;
+        padding: 10px; /* Adjust padding for spacing */
+        font-size: 14px;
+    }
+
+    nav a.Login {
+        margin-top: 0; /* Remove margin-top for login link */
+        margin-left: auto; /* Move login link to the right */
+    }
+
+    nav img {
+        height: 30px;
+        width: 30px;
+        margin: 0;
+    }
+
+    nav a:hover {
+        background-color: #bccce8;
+        color: #a25772;
+    }
+
+    nav a.active {
+        background-color: #dde7f9;
+        color: #a25772;
+    }
+}

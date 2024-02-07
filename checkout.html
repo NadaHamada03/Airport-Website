@@ -1,0 +1,47 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="booking_css.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="booking.js"></script>
+    <title>Checkout</title>
+    <link rel="stylesheet" href="checkout_css.css">
+
+</head>
+
+<body>
+    <nav>
+        <img src="HomePagePics/world.png" alt="Airplane Logo">
+        <a href="HomePage-2.html">Home</a>
+        <a href="About-2.html">About</a>
+        <a href="ContactUs-2.html">Contact Us</a>
+        <a href="Booking.html">Booking</a>
+        <a class="active">Checkout</a>
+        <a href="Tracking-2.html">Tracking</a>
+        <a class="Login" href="HomePage.html">Log-out</a>
+    </nav>
+
+    <div class="translucent-box">
+        <h1>Flight Checkout</h1>
+
+        <div id="ticket-details">
+            <!-- Display ticket details here based on the flight number from the URL parameter -->
+            <p>Flight Number: <span id="flight-number"></span></p>
+            <p>Departure: <span id="departure"></span></p>
+            <p>Destination: <span id="destination"></span></p>
+            <p>Price per Ticket: <span id="price"></span></p>
+        </div>
+
+        <div id="ticket-input">
+            <label for="ticket-count">Number of Tickets:</label>
+            <input type="number" id="ticket-count" min="1" value="1">
+            <button id="calculate-total-btn">Calculate Total</button>
+        </div>
+
+        <div id="total-section">
+            <p>Total Price: <span id="total-price"></span></p>
+            <button id="buy-tickets-btn">Buy Tickets</button>
+        </div>
+    </div>
+</body>
+</html>
